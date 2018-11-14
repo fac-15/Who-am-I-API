@@ -1,30 +1,30 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>hp html</title>
-    <link rel="stylesheet" href="./public/styles.css" />
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <!-- First use API calls to populate the following sections of the DOM with your own data -->
-    <a id="hp-user-link" href="#" target="blank"><h1 id="hp-user-handle">Your name here</h1></a>
-    <!-- <img src="#" alt="gitHub-avatar" id="github-user-avatar" />
-    <p id="repos">Number of repos:&nbsp;<span id="github-user-repos"></span></p>
+      <h1 id="title">Which Harry Potter charater are you?</h1>
+    <form>
+      <input type="text" id="github-user-name" name="github-user-name">
+      <input type="submit" value="Who am I!?" id="submit-button">
+    </form>
+    <h2 id="hp-user-handle"></h2>
+    <img src="#" alt="gitHub-avatar" id="github-user-avatar" />
+    <img src="#" alt="gitHub-avatar" id="hp-avatar" />
 
-    <!-- Now we'll show details of your repos -->
-    <!-- <p>Languages:&nbsp;<span id="github-repos-languages"></span></p>
-    <p>Total stars:&nbsp;<span id="github-repos-stars"></span></p>
-    <hr /> -->
+    <p>Species:&nbsp;<span id="hp-character-species"></span></p>
+    <p>House:&nbsp;<span id="hp-character-house"></span></p>
+    <p>Ancestry:&nbsp;<span id="hp-character-history"></span></p>
+    <p>Wand: Made of&nbsp;<span id="hp-character-wand"></span>
+      <p>Length:&nbsp;<span id="hp-character-wand-length"></span> inches</p></p>
+    <p>Patronus:&nbsp;<span id="hp-character-patronus"></span></p>
+    <p id="student">Hogwarts Studnet</p>
+    <p id="staff">Hogwatrs Staff</p>
+    <hr />
 
-    <!-- let's focus on one of your repos - the first in the list! we'll have to make at least one more API call in order to get all the info needed, uncomment the code below! -->
-
-    <!-- <h3>My top repo</h3>
-    <a id="github-repo-link" href="#" target="blank"><h4 id="github-repo-name">Repo name here</h4></a>
-    <p>Created:&nbsp;<span id="github-repo-created"></span></p>
-    <p>Number of open issues:&nbsp;<span id="github-repo-open-issues"></span></p>
-    <p>People watching:&nbsp;<span id="github-repo-watchers"></span></p>
-    <p>Contributors:&nbsp;<span id="github-repo-contributors"></span></p>
-    <script src="./public/index.js"></script> --> 
+    <script src="./hp/hp.js"></script>
   </body>
 </html>
