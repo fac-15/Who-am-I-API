@@ -1,0 +1,24 @@
+{
+  "name": "who-am-i-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape github/github.test.js && tape hp/hp.test.js| tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fac-15/Who-am-I-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fac-15/Who-am-I-API/issues"
+  },
+  "homepage": "https://github.com/fac-15/Who-am-I-API#readme",
+  "devDependencies": {
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  }
+}
