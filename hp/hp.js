@@ -1,4 +1,3 @@
-//share
 (() => {
   const makeRequest = (url, callback) => {
     let xhr = new XMLHttpRequest();
