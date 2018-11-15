@@ -1,11 +1,33 @@
 
-// let url = "https://api.github.com/users/"; // + input.value
 
+const gitHubAvatar = (() => { 
 
-function getUserName() {
+const theRequest = (url, callback) => {
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        let obj = JSON.parse(xhr.responseText);
+        callback(obj);
+      }
+    };
+    xhr.open('GET', url, true);
+    xhr.send();
+  };
 
+const githubURL = "https://api.github.com/users/";
+
+function userNameCallback = (obj) => {
+if (str.length === 0) {
+
+ return true;
+ } else {
+     return str; 
+ }
 };
 
+makeRequest(githubURL), userNameCallback);
+
+})();
 
 // let fetchingFunction = (function() {
 
@@ -23,4 +45,4 @@ function getUserName() {
 //     xhr.send();
 //     })();
 
-module.exports = function getUserName() {};
+module.exports = gitHubAvatar;
