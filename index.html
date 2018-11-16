@@ -5,17 +5,24 @@
     <title>hp html</title>
     <link rel="stylesheet" href="./style/style.css" />
       <link rel="stylesheet" href="./style/stars.css" />
+      <link href="https://fonts.googleapis.com/css?family=Life+Savers|Open+Sans+Condensed:300" rel="stylesheet">
   </head>
   <body>
-      <h1 id="title">Which Harry Potter charater are you?</h1>
+      <h1 id="title">Which Harry Potter character are you?</h1>
     <form id="form">
-      <input type="text" id="github-user-name" value = "" name="github-user-name">
+     <label for= "input your username here"><input type="text" id="github-user-name" value = "" name="github-user-name" placeholder="Type your GitHub username here">
+     </label> 
       <input type="submit" value="Who am I!?" id="submit-button">
     </form>
+    
+    <section id="hp-section">
     <h2 id="hp-user-handle"></h2>
-    <img src="#" alt="gitHub-avatar" id="github-user-avatar" />
-    <img src="#" alt="harry-potter-avatar" id="hp-avatar" />
 
+    <img src="#" alt="gitHub-avatar" id="github-user-avatar" style="height:250em; width:200em;" />
+    <img src="#" alt="harry-potter-avatar" id="hp-avatar" style="height:250em; width:200em;" />
+   
+
+   
     <p>Species:&nbsp;<span id="hp-character-species"></span></p>
     <p>House:&nbsp;<span id="hp-character-house"></span></p>
     <p>Ancestry:&nbsp;<span id="hp-character-history"></span></p>
@@ -23,8 +30,8 @@
       <p>Wand Length:&nbsp;<span id="hp-character-wand-length"></span> inches</p></p>
     <p>Patronus:&nbsp;<span id="hp-character-patronus"></span></p>
     <p id="student">Hogwarts Student</p>
-    <p id="staff">Hogwatrs Staff</p>
-    <hr />
+    <p id="staff">Hogwarts Staff</p>
+    <hr /></section>
 
     <script src="./hp/hp.js"></script>
     <script src="./github/github.js"></script>

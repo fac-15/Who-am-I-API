@@ -1,12 +1,12 @@
 body{
     
-    background: #2F4274;
+    background: rgb(22, 29, 49);
   
 }
 .star {
     z-index: -3;
     animation: kirakira 8s linear;
-    color: #032e72;
+    color: #434852;
     display: inline-block;
     height: .2em;
     line-height: .2em;
