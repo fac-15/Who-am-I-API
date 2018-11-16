@@ -38,35 +38,54 @@ X 120
 =24
 ______________________________
 
-[ ...
-    {
+`[ ...
+   {
     name: "Argus Filch",
+    
     species: "human",
+    
     gender: "male",
+    
     house: "",
+    
     dateOfBirth: "",
+    
     yearOfBirth: "",
+    
     ancestry: "squib",
+    
     eyeColour: "",
+    
     hairColour: "grey",
+    
     wand: {
+    
     wood: "",
+    
     core: "",
+    
     length: ""
     },
     patronus: "",
+    
     hogwartsStudent: false,
+    
     hogwartsStaff: true,
+    
     actor: "David Bradley",
+    
     alive: true,
+    
     image: "http://hp-api.herokuapp.com/images/filch.jpg"
+    
     }
-]
+    
+]`
 
 ------------------------------------------------------------------
 Function to asign a Harry Potter character to the Github user name
   
-  //takes an argument of userName
+  `//takes an argument of userName
   const getCharacterIndex = (userName) => {
     
     //converts to lowercase
@@ -83,7 +102,7 @@ Function to asign a Harry Potter character to the Github user name
     //the result is the index of the array object - the number of the character.
     const index = sum % 25;
     return index;
-  };
+  };`
 
 end-----------------------------------------------------------------
 
