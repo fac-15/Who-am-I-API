@@ -12,7 +12,7 @@ We're still not comfortable with tape, but we tried our best to write tests befo
 
 ## Things that went well
 
-
+The css is responsive.
 
 ## What we are proud of
 
