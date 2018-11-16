@@ -102,7 +102,7 @@
       e.preventDefault();
       const name = e.target[0].value;
 
-      const hpObjUrl = 'http://hp-api.herokuapp.com/api/characters';
+      const hpObjUrl = 'https://cors-anywhere.herokuapp.com/http://hp-api.herokuapp.com/api/characters';
       const index = getCharacterIndex(name);
 
       makeRequest(hpObjUrl, (obj) => {
