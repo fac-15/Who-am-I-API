@@ -1,4 +1,8 @@
-body{background: black}
+body{
+    
+    background: #2F4274;
+  
+}
 .star {
     z-index: -3;
     animation: kirakira 8s linear;
