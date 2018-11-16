@@ -83,8 +83,22 @@ end-----------------------------------------------------------------
 
 ## What we are proud of
 
-Testing
--------
+Testing in Tape
+---------------
+
+const converter = (name) => {
+  let sum = 0;
+  for (let i = 0; i < name.length; i++) {
+    let code = name.charCodeAt(i);
+    sum += code;
+  }
+  let index = sum % 25;
+  return index;
+};
+
+const tolowercase = (name) => {
+  return name.toLowerCase();
+};
 
 
 ## Our conclusion
