@@ -8,7 +8,7 @@ We tried and tried to get the event listeners to work and it just wouldn't. Fina
 
 ### Testing 
 
-We're still not comfortable with tape, but we tried our best to write tests before the function. Things we learnt: don't try to test API functions. 
+We're still not comfortable with tape, but we tried our best to write our tests before the function. Things we learnt: don't try to test API functions. 
 
 ## Things that went well
 
