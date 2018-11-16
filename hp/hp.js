@@ -11,11 +11,8 @@
     xhr.send();
   };
 
-  // url
-  const hpObjUrl = 'http://hp-api.herokuapp.com/api/characters';
-
   //callback
-  const hpNameCallback = (obj) => {
+  const hpNameCallback = (obj, index) => {
     document.getElementById('hp-user-handle').textContent = obj[index].name;
     document.getElementById('hp-character-species').textContent =
       obj[index].species;
@@ -37,28 +34,40 @@
     document.getElementById('hp-avatar').src = obj[index].image;
 
     if (!obj[index].hogwartsStudent) {
-      document.getElementById('student').style.visibility = 'hidden';
+      document.getElementById('student').style.display = 'none';
     }
 
     if (!obj[index].hogwartsStaff) {
-      document.getElementById('staff').style.visibility = 'hidden';
+      document.getElementById('staff').style.display = 'none';
     }
   };
 
-  makeRequest(hpObjUrl, hpNameCallback);
+  const getCharacterIndex = (userName) => {
+    const userNameLC = userName.toLowerCase();
 
-  let userName = document.getElementById('github-user-name').value;
-  let userNameLC = userName.toLowerCase();
+    let sum = 0;
+    for (let i = 0; i < userNameLC.length; i++) {
+      const code = userNameLC.charCodeAt(i);
+      sum += code;
+    }
+    const index = sum % 25;
+    return index;
+  };
 
-  var sum = 0;
-  for (var i = 0; i < userNameLC.length; i++) {
-    var code = userNameLC.charCodeAt(i);
-    sum += code;
-  }
-  var index = sum % 25;
+  const init = () => {
+    const form = document.getElementById('form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = e.target[0].value;
+
+      const hpObjUrl = 'http://hp-api.herokuapp.com/api/characters';
+      const index = getCharacterIndex(name);
+
+      makeRequest(hpObjUrl, (obj) => {
+        hpNameCallback(obj, index);
+      });
+    });
+  };
+
+  init();
 })();
-
-// if (typeof module !== 'undefined') {
-//   module.exports = hpfunctions;
-// }
-// module.exports = all;
