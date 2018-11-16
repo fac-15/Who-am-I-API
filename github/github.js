@@ -1,26 +1,32 @@
-function getUserName(name) {
-  let errorMess = 'Please enter name';
-  let endsWith = name.length == 0 ? true : name;
-  return endsWith == true ? errorMess : 'https://api.github.com/users/' + name;
-}
 
-//var url = "https://api.github.com/users/";// + imput value when user submits
 
-// (function(){
 
-//     var xhr = XMLHttpRequest();
 
-// xhr.onreadystate = function(){
-//     if(xhr.readyState == 4 && xhr.status == 200){
+document.getElementById("form").addEventListener("submit", 
+  
+ function theRequest(event) {
+   event.preventDefault();
+  let name = document.getElementById("github-user-name").value;
 
-//         var gitResponse = xhr.responseText;
-//         var gitObject = JSON.parse(gitResponse);
-//     }
-// };
 
-// xhr.open("GET", url, true);
-// xhr.send();
+  let xhr = new XMLHttpRequest();
+  
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        let obj = JSON.parse(xhr.responseText);
+        document.getElementById("github-user-avatar").src = obj.avatar_url;
+      }
+    };
+    xhr.open('GET', 'https://api.github.com/users/' + name, true);
+    xhr.send();
+  });
 
-// })();
 
-module.exports = getUserName;
+
+
+
+
+// if (typeof module !== "undefined") {
+//   module.exports = "./github/github.js";
+//   }
+  

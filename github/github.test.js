@@ -24,7 +24,7 @@ test('if string == ""', function(t){
 
 test('if the url contains "https://api.github.com/users/" ', function(t){
 
-    const result = github(dummyStr);
+    const result = github(dummyUrl);
     const expected = 'https://api.github.com/users/'+ dummyStr;
     t.equals(result, expected);
     t.end();
