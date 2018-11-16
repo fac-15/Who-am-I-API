@@ -55,7 +55,7 @@
   };
 
   const init = () => {
-    const form = document.getElementById('input-form');
+    const form = document.getElementById('form');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const name = e.target[0].value;
