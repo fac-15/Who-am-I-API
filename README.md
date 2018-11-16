@@ -2,20 +2,29 @@
 
 ## Lessons learnt
 
+_Do not try to over complicate things!_ When trying to randomly assign a character to a username we were making things much harder than they needed to be, once we simplified and tried the simplest version of the algorithm it was suddenly working perfectly! 
+
+_Do not test API's_
+
 ### Add event listener 
 
-We tried and tried to get the event listeners to work and it just wouldn't. Finally we realised that we shouldn't have put event listeners on the submit button because our button was in a form. The event listener needed to be put on the form. 
+We tried and tried to get the event listeners to work on our submit button and it just wouldn't. 
+
+Finally we realised that we shouldn't have put event listeners on the submit button because our button was in a form. The event listener needed to be put on the **form**. 
 
 ### Testing 
 
-We're still not comfortable with tape, but we tried our best to write tests before the function. Things we learnt: don't try to test API functions. 
+We're still not comfortable with tape, but we tried our best to write tests before the function. 
+
+**Things we learnt:** don't try to test API functions. 
 
 ## Things that went well
 
+**Planning!** We all took the time to discuss our idea and layout the architecture of the project before any code was written.
+
 The css is responsive.
 
-
-
+**Pairing!!**
 
 How the character is assigned
 ----------------------------
