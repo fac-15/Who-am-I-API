@@ -1,0 +1,25 @@
+body{
+    
+    background: #2F4274;
+  
+}
+.star {
+    z-index: -3;
+    animation: kirakira 8s linear;
+    color: #032e72;
+    display: inline-block;
+    height: .2em;
+    line-height: .2em;
+    position: fixed;
+    top: -1em;
+    z-index: 1000;
+}
+
+@keyframes kirakira {
+    0% {
+        transform:translateY(0) rotateY(0);
+    }
+    100% {
+        transform:translateY(calc(100vh + 1em)) rotateY(3600deg);
+    }
+}
