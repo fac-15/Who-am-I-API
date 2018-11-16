@@ -94,8 +94,8 @@ ______________________________
 
 ------------------------------------------------------------------
 Function to asign a Harry Potter character to the Github user name
-  
-  `//takes an argument of userName
+  `
+  //takes an argument of userName
   const getCharacterIndex = (userName) => {
     
     //converts to lowercase
@@ -112,7 +112,8 @@ Function to asign a Harry Potter character to the Github user name
     //the result is the index of the array object - the number of the character.
     const index = sum % 25;
     return index;
-  };`
+  };
+  `
 
 ## What we are proud of
 ### Testing in Tape
@@ -134,4 +135,5 @@ const tolowercase = (name) => {
 
 ## Our conclusion
 
-
+We had a lot of fun! 
+![](https://media.giphy.com/media/xT0BKiK5sOCVdBUhiM/giphy.gif)
