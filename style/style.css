@@ -1,1 +1,22 @@
+* {
+    margin: 0;
+}
 
+.body {
+    display: grid;
+    grid-columns: 1fr 1fr 1fr 1fr;
+    grid-rows: 25% auto auto;
+  }
+
+  #title {
+    grid-column: 2/4;
+    text-align: center;
+    padding: 2em; 
+    /* grid-column-end: 4;
+    grid-row-start: 1; */
+  }
+
+  #form {
+      grid-column: 2/4;
+      text-align: center;
+  }
