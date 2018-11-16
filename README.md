@@ -8,7 +8,7 @@ We tried and tried to get the event listeners to work and it just wouldn't. Fina
 
 ### Testing 
 
-We're still not comfortable with tape, but we tried our best to write our tests before the function. Things we learnt: don't try to test API functions. 
+We're still not comfortable with tape, but we tried our best to write tests before the function. Things we learnt: don't try to test API functions. 
 
 ## Things that went well
 
@@ -104,12 +104,8 @@ Function to asign a Harry Potter character to the Github user name
     return index;
   };`
 
-end-----------------------------------------------------------------
-
 ## What we are proud of
-
-Testing in Tape
----------------
+### Testing in Tape
 
 const converter = (name) => {
   let sum = 0;
